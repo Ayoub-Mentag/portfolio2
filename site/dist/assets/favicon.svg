@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="15" fill="#0f766e"/>
-  <path d="M30 10v30H11Z" fill="#f1f5f3"/>
-  <path d="M35 19v21h17Z" fill="#99e1ce"/>
-  <path d="M10 44h44l-8 10H20Z" fill="#f1f5f3"/>
+  <title>Ayoub Mentag — AM</title>
+  <defs><mask id="cut"><path fill="white" d="M0 0h64v64H0Z"/><path stroke="black" stroke-width="2.5" d="M2 36h31"/></mask></defs>
+  <g fill="#46dda8" mask="url(#cut)">
+    <path d="M3 51 13 13h9l10 38h-9l-2-9H13l-2 9Zm12-17h4l-2-12Z" fill-rule="evenodd"/>
+    <path d="M35 51V13h8l6 15 6-15h8v38h-8V30l-6 13-6-13v21Z"/>
+  </g>
 </svg>
