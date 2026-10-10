@@ -5,6 +5,16 @@ function updateThemeButton() {
   themeButton.setAttribute('aria-pressed', String(dark));
   themeButton.title = `Switch to ${dark ? 'light' : 'dark'} theme`;
   document.querySelector('meta[name="theme-color"]').content = dark ? '#111514' : '#FAFAF9';
+  
+  const expressImg = document.querySelector('img[alt="Express.js"]');
+  if (expressImg) {
+    expressImg.src = dark ? 'assets/Express.svg' : 'assets/Express-black.svg';
+  }
+  
+  const ollamaImg = document.querySelector('img[alt="Ollama"]');
+  if (ollamaImg) {
+    ollamaImg.src = dark ? 'assets/ollama-icon.svg' : 'assets/ollama-icon-black.svg';
+  }
 }
 themeButton.addEventListener('click', () => {
   const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
